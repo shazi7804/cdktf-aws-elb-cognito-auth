@@ -151,3 +151,19 @@ The new password will be reset for the first time
 Congratulations!! you are successfully authenticated.
 
 ![website-login-successfully](img/website-login-successfully.png)
+
+## Cleaning up
+
+Run the following command:
+
+```sh
+$ cdktf destroy
+```
+
+## Security
+
+See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
+
+## License
+
+This library is licensed under the MIT-0 License. See the LICENSE file.
