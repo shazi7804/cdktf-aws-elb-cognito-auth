@@ -4,7 +4,7 @@ This repository describes how to integrate Amazon Cognito User Pool(OAuth 2.0 Cl
 
 ## Overview
 
-You call build a website with a simple Login button.
+You call build a website with a simple Login button. This repository will create an AWS ALB that is configured authentication using Cognito user pool.
 
 ## Prerequisites
 
