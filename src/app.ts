@@ -1,5 +1,5 @@
 import { Construct } from 'constructs';
-import { Resource, Token } from 'cdktf';
+import { Resource, Token, TerraformOutput } from 'cdktf';
 import {
     iam,
     autoscaling,
@@ -190,5 +190,8 @@ export class WebService extends Resource {
             }]
         });
 
+        new TerraformOutput(this, 'ELBDomainName', { value: alb.dnsName });
+        new TerraformOutput(this, 'CallBackURL', { value: alb.dnsName+'/oauth2/idpresponse' });
+        new TerraformOutput(this, 'AuthenticationPath', { value: alb.dnsName+'/users/users.html' });
     }
 }

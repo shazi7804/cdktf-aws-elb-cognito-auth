@@ -106,7 +106,7 @@ body
         <font face="verdana"> <h3 style="color:white;" align="center">Elastic Load Balancing Authentication Demo</h3></font>
         
         <div class="wrapper">
-        <button class="button" onclick="window.location.href = 'https://your-alb-name.region.elb.amazonaws.com/users/users.html'">Login</button>
+        <button class="button" onclick="window.location.href = 'https://cdktf-aws-elb-cognito-auth-1399737077.us-east-1.elb.amazonaws.com/users/users.html'">Login</button>
         </div>
 </body>
 </html>
