@@ -17,7 +17,7 @@ If you haven't already done so you must first:
 - A Full Qualified Domain Name (FQDN) to custom domain name to your ALB (If you are just testing, this is optional)
 - [Amazon VPC with Public and Private Subnets (NAT)](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Scenario2.html).
 
-## Create and Initialize
+## Create and initialize
 
 Start to install for Terraform CDK and Node.js
 
