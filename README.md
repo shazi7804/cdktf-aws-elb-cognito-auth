@@ -28,9 +28,9 @@ Generated typescript constructs in the output directory: .gen
 $ npm install
 ```
 
-## Setup the `config.json` configuration file
+## Setup the configuration file
 
-The stack requires few inputs from you. 
+The stack requires set up `config.json` configuration. 
 
 ```json
 {
@@ -77,9 +77,9 @@ The stack requires few inputs from you.
 }
 ```
 
-- webservice.certificateArn : This is the certificate that ALB will use to secure the communication with your browser. You would need to copy the ARN from the ACM console
-- cognito.domain : This will be the domain name of the Cognito Hosted UI.
-- cognito.callbackUrls : You must get the ALB domain name after the first deployment. You can use the temporary name first.
+- `webservice.certificateArn` : This is the certificate that ALB will use to secure the communication with your browser. You would need to copy the ARN from the ACM console
+- `cognito.domain` : This will be the domain name of the Cognito Hosted UI.
+- `cognito.callbackUrls` : You must get the ALB domain name after the first deployment. You can use the temporary name first.
 
 ## Deploy Cognito and Website
 
@@ -108,9 +108,7 @@ Once deployed, Terraform CDK will pring out the `call back url` and `authenticat
 
 ```bash
 cat <<EOF > /var/www/html/index.html
-
     <button class="button" onclick="window.location.href = 'https://<ALB_DOMAIN_NAME>/users/users.html'">Login</button>
-
 EOF
 ```
 
